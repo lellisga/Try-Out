@@ -61,6 +61,7 @@ GEM
       cucumber (>= 0.10.3)
       nokogiri (>= 1.4.4)
       rack-test (>= 0.5.7)
+    database_cleaner (0.6.7)
     diff-lcs (1.1.2)
     erubis (2.7.0)
     execjs (1.0.0)
@@ -165,6 +166,7 @@ DEPENDENCIES
   bson_ext
   coffee-script
   cucumber-rails (>= 0.3.2)
+  database_cleaner
   jquery-rails
   mongo_mapper
   rails (= 3.1.0.rc1)

@@ -7,5 +7,5 @@ Feature: demo shows goodbye
   Scenario: show goodbye message
     Given Im not doing anything
     When I visit the say/goodbye path
-    Then I should see Goodbye!
+    Then I should see "Goodbye!"
     

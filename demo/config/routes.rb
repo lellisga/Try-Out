@@ -2,6 +2,7 @@ Demo::Application.routes.draw do
 
   get "say/hello"
   get "say/goodbye"
+  get "say/file"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

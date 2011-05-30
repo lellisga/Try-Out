@@ -13,7 +13,10 @@ module NavigationHelpers
 
     when /hello path/
       'say/hello'
-      
+
+    when /file path/
+      'say/file'
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

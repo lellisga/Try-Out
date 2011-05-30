@@ -16,12 +16,10 @@ describe SayController do
     end
   end
 
-  context "#index" do
-    it "should redirect to index" do
-      pending "there's no index"  do
-        response.should render_template("index")
-        post :index
-      end
+  context "#goodbye" do
+    it "should render to the goodbye template" do
+      get :goodbye
+      response.should render_template("goodbye")
     end
   end
   

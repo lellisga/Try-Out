@@ -22,5 +22,12 @@ describe SayController do
       response.should render_template("goodbye")
     end
   end
+
+  context "#file" do
+    it "should render to the file template" do
+      get :file
+      response.should render_template("file")
+    end
+  end
   
 end

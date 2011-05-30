@@ -4,4 +4,7 @@ class SayController < ApplicationController
     @message = "Hello World!"
   end
 
+  def goodbye
+  end
+  
 end

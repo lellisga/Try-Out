@@ -2,12 +2,12 @@ Depot::Application.routes.draw do
 
   
 
+  resources :products
+
   get 'products/index'
   get 'products/show'
   get 'products/new'
   
-  resources :products
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -15,7 +15,6 @@ gem 'jquery-rails'
 gem 'nifty-generators'
 gem 'mongoid'
 gem 'bson_ext'
-gem 'ruby-debug'
 
 # Use unicorn as the web server
 # gem 'unicorn'

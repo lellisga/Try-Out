@@ -20,8 +20,8 @@ WATCH OUT!!
 
 >>cd app
 
->> rails generate mongo_mapper:config
+>> rails generate mongoid:config
 
-...create config/mongo.ymlc
+...create config/mongoid.ymlc
 
 #End Creating a new rails app

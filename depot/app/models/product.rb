@@ -1,10 +1,9 @@
-class Product #< ActiveRecord::Base
+class Product
   include Mongoid::Document
-  
-  
-  field :title, :require => true
-  field :description, :require => true
-  field :image_url, :require => true
-
-  
+  field :title, :type => String
+  key :title
+  field :description, :type => String
+  field :image_url, :type => String
+  validates_presence_of :title, :description , :image_url
+  validates_uniqueness_of :title
 end

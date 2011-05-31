@@ -1,20 +1,20 @@
-<% title "Product" %>
+<p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <b>Title:</b>
   <%= @product.title %>
 </p>
+
 <p>
-  <strong>Description:</strong>
+  <b>Description:</b>
   <%= @product.description %>
 </p>
+
 <p>
-  <strong>Image Url:</strong>
+  <b>Image url:</b>
   <%= @product.image_url %>
 </p>
 
-<p>
-  <%= link_to "Edit", edit_product_path(@product) %> |
-  <%= link_to "Destroy", @product, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", products_path %>
-</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

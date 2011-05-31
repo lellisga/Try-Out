@@ -11,6 +11,7 @@ Feature: add a product
     And I press "Create Product"
     Then I should see "3 errors prohibited this product from being saved:"
     
+    
   Scenario Outline: Add product without some fields
     Given Im not doing nothing
     When I go to products path
@@ -54,7 +55,22 @@ Feature: add a product
       | Pragmatic thinking | awesome book | /images/pt.jpg        |
       
     
-
+  Scenario: Add a new product and delete it
+    Given Im not doing nothing
+    When I go to products path
+    And I follow "New Product"
+    And I fill in "Title" with "rails book"
+    And I fill in "Description" with "You should buy this book"
+    And I fill in "Image url" with "image/rails_book.jpg"
+    And I press "Create Product"
+    And I should see "Product was successfully created."
+    And I follow "Back"
+    And I should see "rails book"
+    And I follow "Destroy"
+    And I should see "Are you sure?"
+    And I follow "Yes"
+    Then I should not see "rails book"
+    
 
 
     

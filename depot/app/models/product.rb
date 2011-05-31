@@ -1,12 +1,10 @@
 class Product #< ActiveRecord::Base
-  include MongoMapper::Document
-
-  #attr_accessible :title, :description, :image_url
+  include Mongoid::Document
   
-  key :id, ObjectId
-  key :title, String
-  key :description, String
-  key :image_url, String
+  
+  field :title, :require => true
+  field :description, :require => true
+  field :image_url, :require => true
 
-  validates_presence_of :title , :description, :image_url
+  
 end

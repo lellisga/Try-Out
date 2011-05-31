@@ -6,3 +6,22 @@ depot application using:
 -Cucumber (0.10.3)
 -MongoDB
 -Coffescript
+
+
+WATCH OUT!!
+
+#Creating a new rails app using mongodb:
+
+>>rails new app -OJT 
+
+-O, [--skip-activerecord]  # Skip Active Record files
+-J, [--skip-prototype]     # Skip Prototype files
+-T, [--skip-testunit]      # Skip Test::Unit files
+
+>>cd app
+
+>> rails generate mongo_mapper:config
+
+...create config/mongo.ymlc
+
+#End Creating a new rails app

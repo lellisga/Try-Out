@@ -67,9 +67,6 @@ Feature: add a product
     And I follow "Back"
     And I should see "rails book"
     And I follow "Destroy"
-    #Then show me the page
-    #And I should see "Are you sure?"
-    #And I follow "Yes"
     Then I should not see "rails book"
     
 

@@ -1,3 +1,4 @@
+
 I'll be adding different Ruby on Rails projects.
 
 This is the space for testing things like:
@@ -9,4 +10,5 @@ This is the space for testing things like:
 -Jasmine(BDD for JS)-> TODO
 -Coffescript(JS) -> TODO
 -Jenkin behind apache( continuous integration ) -> TODO
--MongoDB -> TODO
+-MongoDB
+-jQuery

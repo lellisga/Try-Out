@@ -6,7 +6,7 @@ depot application using:
 -Cucumber (0.10.3)
 -MongoDB
 -Coffescript
-
+-jQuery
 
 WATCH OUT!!
 

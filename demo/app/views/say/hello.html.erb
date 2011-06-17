@@ -5,6 +5,7 @@
   
   <body>
     <h1> <%= @message %> </h1>
-    <p>Time to say  <%= link_to "Goodbye!", :action => "goodbye" %> </p>
+    <!--<p>Time to say  <%= link_to "Goodbye!", :action => "goodbye"%> </p>-->
+    <p>Time to say  <%= link_to "Goodbye!", say_goodbye_path %> </p>
   </body>
 </html>

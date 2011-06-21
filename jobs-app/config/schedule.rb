@@ -5,7 +5,7 @@
 
 # Example:
 #
-set :output, "/Users/liellis/Dropbox/Tutorials/Rails/agile-web-development-rails-third/jobs-app/logs/cron.log"
+set :output, "#{File.dirname(__FILE__)}/../logs/cron.log"
 #
 # every 2.hours do
 #   command "/usr/bin/some_great_command"
@@ -20,6 +20,6 @@ set :output, "/Users/liellis/Dropbox/Tutorials/Rails/agile-web-development-rails
 # Learn more: http://github.com/javan/whenever
 
 every 1.hour do
-  command "cd #{}/../"
-  command ""
+  command "cd #{File.dirname(__FILE__)}/../"
+  command "push origin master"
 end

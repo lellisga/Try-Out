@@ -1,1 +1,5 @@
 Using whenEver to manage the crontab of the app
+
+..App should auto push my commit changes every hour
+
+BTW -> thats a great idea :D

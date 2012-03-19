@@ -5,7 +5,7 @@
 
 # Example:
 #
-set :output, "/Users/liellis/Dropbox/Tutorials/Rails/agile-web-development-rails-third/jobs-app/logs/cron.log"
+set :output, "logs/cron.log"
 #
 # every 2.hours do
 #   command "/usr/bin/some_great_command"
@@ -20,10 +20,10 @@ set :output, "/Users/liellis/Dropbox/Tutorials/Rails/agile-web-development-rails
 # Learn more: http://github.com/javan/whenever
 
 every 1.hour do
-  command "cd /Users/liellis/Dropbox/Tutorials/Rails/agile-web-development-rails-third/jobs-app && push origin master" 
+  command "cd jobs-app && push origin master" 
 end
 
 every 2.minutes do
-  command "cd /Users/liellis/Dropbox/Tutorials/Rails/agile-web-development-rails-third/jobs-app && ruby auto-push.rb"
+  command "cd jobs-app && ruby auto-push.rb"
 end
 
